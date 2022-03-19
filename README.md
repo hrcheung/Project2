@@ -70,7 +70,8 @@ print('selects {0} items and costs {1} RU'.format(len(items),request_cost))
 
 ### 3.Update
 > Use SDK to update item. 
-> if exists, update; else insert
+> If item exists, update; else insert
+> Note: watch out for the replace_item SDK, which prompts exception if not exists
 
 ```Python
 for grocery_item in grocery_item_to_add:
