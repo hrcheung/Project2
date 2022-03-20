@@ -5,9 +5,10 @@
 I refer to [CosmosDB document](https://docs.microsoft.com/en-us/azure/cosmos-db) by Microsoft Azure. 
 
 ## Prerequisites
-1. register for Azure CosmosDB account
-2. install Python on laptop
-3. pip install Cosmos PyPi, azure-cosmos and related packages
+1. Register for Azure CosmosDB account
+2. Install Python on laptop
+3. Pip install Cosmos PyPi, azure-cosmos and related packages
+4. Import grocery.py (created by myself) to facilitate item creation
 
 ## CosmosDB NoSQL Database Structure
 
@@ -22,10 +23,11 @@ from high level to low level, the structure of above concepts are as below:
                        Item
                        
 
-## Perform CRUD in Item
+## Perform CRUD in Item 
 
-### 1.Create: use create_item SDK
+### 1.Create: 
 
+> Use SDK to create item
 ```Python
 container.create_item(body=grocery_item_to_add[i])
 ```
